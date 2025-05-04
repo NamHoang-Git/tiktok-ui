@@ -17,6 +17,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Bahnschrift", sans-serif;
 }
 
 html {
@@ -24,11 +25,31 @@ html {
 }
 
 body {
-    font-family: "Bahnschrift", sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
     color: var(--text-color);
+
+    // Custom tippy tooltip
+    .tippy-box {
+        border-radius: 8px;
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+        font-weight: 600;
+        background: rgba(84, 84, 84, 0.92);
+    }
+
+    .tippy-arrow {
+        color: rgba(84, 84, 84, 0.92);
+    }
+
+    .tippy-box[data-placement^="bottom"] > .tippy-arrow:before {
+        top: -8px;
+    }
+
+    .tippy-content {
+        padding: 8px 9px;
+    }
 }
 
 button,
@@ -36,6 +57,7 @@ input,
 [tabindex] {
     outline: none;
     border: none;
+    background: transparent;
 }
 
 a[href] {

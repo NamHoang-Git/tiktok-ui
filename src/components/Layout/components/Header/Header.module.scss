@@ -106,7 +106,33 @@
         // Actions
         .actions {
             display: flex;
-            gap: 8px;
+            align-items: center;
+            gap: 12px;
+
+            .action-btn {
+                font-size: 2rem;
+                line-height: 2rem;
+                color: #161823;
+                padding: 6px;
+                cursor: pointer;
+            }
+
+            .user-avatar {
+                width: 32px;
+                height: 32px;
+                object-fit: cover;
+                margin-left: 12px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            .more-btn {
+                font-size: 2rem;
+                line-height: 2rem;
+                margin-left: 8px;
+                padding: 0 8px;
+                cursor: pointer;
+            }
         }
     }
 }
